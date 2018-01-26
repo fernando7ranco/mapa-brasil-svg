@@ -1,0 +1,61 @@
+#titleTooltip{
+	font-weight:bold;
+	position:absolute;
+	border-radius:3px;
+	color:white;
+	background:#1E1E1E;
+	border:1px solid #fff;
+	padding:5px 15px;
+	font-family:monospace;
+	z-index:10;
+	text-transform:uppercase;
+	font-size:13px;
+	max-width:300px;
+	text-align:center;
+	display:none;
+}
+.container{
+	margin:10px auto;
+	width:450px;	
+}
+#svg-map{
+
+	width:450px;
+	height:450px;
+	stroke:rgba(0,0,0,0.5);
+	padding:0;
+}
+
+#svg-map a path{
+	stroke: rgba(51, 122, 183, 0.3)
+}	
+#svg-map a path:not([fill]){ 
+	fill:rgba(0,128,0,0.01);
+}
+
+#svg-map text { 
+	font:12px Arial-BoldMT, sans-serif; 
+	fill:#222;
+}
+#svg-map a{ 
+	text-decoration:none;
+	cursor:pointer;
+}
+#svg-map a:hover path{ 
+	transition-duration:0.4s;
+	fill:#fff !important ;
+	stroke:green;
+}
+#svg-map a circle{ 
+	stroke:rgba(0,0,0,0.15);
+}
+#svg-map a circle:not([fill]){
+	fill:rgba(50,205,50,0.1); 
+}
+#svg-map a:hover circle{
+	transition-duration:0.4s;
+	fill:#fff !important;
+	stroke:green;
+}
+
+
